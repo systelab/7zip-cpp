@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 2.8)
 project(7zpp)
 include(CTest)
 
+include(${CMAKE_SOURCE_DIR}/build/conanbuildinfo.cmake)
+conan_basic_setup()
+
 file(GLOB 7ZPP_SOURCES  ${PROJECT_SOURCE_DIR}/7zpp/*.cpp )
 add_library(7zpp ${7ZPP_SOURCES})
 target_include_directories(7zpp PRIVATE  ${PROJECT_SOURCE_DIR}   ${PROJECT_SOURCE_DIR}/7zpp ${PROJECT_SOURCE_DIR}/7z/C  ${PROJECT_SOURCE_DIR}/7z/CPP)
