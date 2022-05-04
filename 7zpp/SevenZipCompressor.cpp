@@ -161,9 +161,9 @@ bool SevenZipCompressor::SetCompressionProperties(IUnknown* outArchive) const
 		return false;
 	}
 
-	const size_t numProps = 1;
-	const wchar_t* names[numProps] = { L"x" };
-	CPropVariant values[numProps] = { static_cast< UInt32 >( m_compressionLevel.GetValue() ) };
+	const size_t numProps = 2;
+	const wchar_t* names[numProps] = { L"x", L"mt" };
+	CPropVariant values[numProps] = { static_cast< UInt32 >( m_compressionLevel.GetValue() ), static_cast< UInt32 >(m_compressionThreads) };
 
 	CComPtr< ISetProperties > setter;
 	outArchive->QueryInterface( IID_ISetProperties, reinterpret_cast< void** >( &setter ) );

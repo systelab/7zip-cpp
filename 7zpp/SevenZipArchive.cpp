@@ -37,6 +37,16 @@ namespace SevenZip
 		return m_compressionLevel;
 	}
 
+	void SevenZipArchive::SetCompressionThreads(UCHAR nThreads)
+	{
+		m_compressionThreads = nThreads;
+	}
+
+	UCHAR SevenZipArchive::GetCompressionThreads()
+	{
+		return m_compressionThreads;
+	}
+
 	CompressionFormatEnum SevenZipArchive::GetCompressionFormat()
 	{
 		if (!m_ReadMetadata && !m_OverrideCompressionFormat)
