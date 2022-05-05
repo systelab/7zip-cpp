@@ -8,7 +8,6 @@
 #include "UsefulFunctions.h"
 #include <atltime.h>
 
-
 namespace SevenZip
 {
 
@@ -163,7 +162,8 @@ bool SevenZipCompressor::SetCompressionProperties(IUnknown* outArchive) const
 
 	const size_t numProps = 2;
 	const wchar_t* names[numProps] = { L"x", L"mt" };
-	CPropVariant values[numProps] = { static_cast< UInt32 >( m_compressionLevel.GetValue() ), static_cast< UInt32 >(m_compressionThreads) };
+	
+	CPropVariant values[numProps] = { static_cast< UInt32 >( m_compressionLevel.GetValue() ), static_cast< bool >( m_enableMultiThreadCompression ) };
 
 	CComPtr< ISetProperties > setter;
 	outArchive->QueryInterface( IID_ISetProperties, reinterpret_cast< void** >( &setter ) );
