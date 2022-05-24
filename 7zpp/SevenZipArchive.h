@@ -22,6 +22,9 @@ namespace SevenZip
 		virtual void SetCompressionLevel(const CompressionLevelEnum& level);
 		virtual CompressionLevelEnum GetCompressionLevel();
 
+		virtual void SetEnableMultiThreadCompression(bool enableMultiThreadCompression);
+		virtual bool GetEnableMultiThreadCompression();
+
 		virtual bool DetectCompressionFormat();
 
 		virtual size_t GetNumberOfItems();
@@ -36,6 +39,7 @@ namespace SevenZip
 		TString m_archivePath;
 		CompressionFormatEnum m_compressionFormat;
 		CompressionLevelEnum m_compressionLevel;
+		bool m_enableMultiThreadCompression = true;
 		size_t m_numberofitems = 0;
 		std::vector<std::wstring> m_itemnames;
 		std::vector<size_t> m_origsizes;

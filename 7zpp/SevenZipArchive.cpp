@@ -37,6 +37,16 @@ namespace SevenZip
 		return m_compressionLevel;
 	}
 
+	void SevenZipArchive::SetEnableMultiThreadCompression(bool enableMultiThreadCompression)
+	{
+		m_enableMultiThreadCompression = enableMultiThreadCompression;
+	}
+
+	bool SevenZipArchive::GetEnableMultiThreadCompression()
+	{
+		return m_enableMultiThreadCompression;
+	}
+
 	CompressionFormatEnum SevenZipArchive::GetCompressionFormat()
 	{
 		if (!m_ReadMetadata && !m_OverrideCompressionFormat)
