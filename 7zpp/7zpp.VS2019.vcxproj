@@ -106,18 +106,6 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
     <Lib>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -143,18 +131,6 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
     <Lib>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -180,18 +156,6 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
     <Lib>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -217,18 +181,6 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>C:\git\7zip-cpp-systelab;C:\git\7zip-cpp-systelab\7zpp;C:\git\7zip-cpp-systelab\7z\C;C:\git\7zip-cpp-systelab\7z\CPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
     <Lib>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
@@ -238,91 +190,26 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\git\7zip-cpp-systelab\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/git/7zip-cpp-systelab/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/git/7zip-cpp-systelab -BC:/git/7zip-cpp-systelab/build --check-stamp-file C:/git/7zip-cpp-systelab/build/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCXXCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeRCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\git\7zip-cpp-systelab\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/git/7zip-cpp-systelab/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/git/7zip-cpp-systelab -BC:/git/7zip-cpp-systelab/build --check-stamp-file C:/git/7zip-cpp-systelab/build/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCXXCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeRCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\git\7zip-cpp-systelab\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/git/7zip-cpp-systelab/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/git/7zip-cpp-systelab -BC:/git/7zip-cpp-systelab/build --check-stamp-file C:/git/7zip-cpp-systelab/build/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCXXCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeRCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\git\7zip-cpp-systelab\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/git/7zip-cpp-systelab/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/git/7zip-cpp-systelab -BC:/git/7zip-cpp-systelab/build --check-stamp-file C:/git/7zip-cpp-systelab/build/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.20\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeCXXCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeRCCompiler.cmake;C:\git\7zip-cpp-systelab\build\CMakeFiles\3.20.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\git\7zip-cpp-systelab\build\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\ArchiveExtractCallback.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\ArchiveOpenCallback.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\ArchiveUpdateCallback.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\FileSys.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\GUIDs.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\InStreamWrapper.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\MemExtractCallback.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\OutMemStream.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\OutStreamWrapper.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\PathScanner.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\PropVariant.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenString.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenZipArchive.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenZipCompressor.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenZipException.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenZipExtractor.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenZipLibrary.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\SevenZipLister.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\UsefulFunctions.cpp" />
-    <ClCompile Include="C:\git\7zip-cpp-systelab\7zpp\stdafx.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="C:\git\7zip-cpp-systelab\build\ZERO_CHECK.vcxproj">
-      <Project>{D2E334B7-531C-3700-93B9-0CB78625B533}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
+    <ClCompile Include="ArchiveExtractCallback.cpp" />
+    <ClCompile Include="ArchiveOpenCallback.cpp" />
+    <ClCompile Include="ArchiveUpdateCallback.cpp" />
+    <ClCompile Include="FileSys.cpp" />
+    <ClCompile Include="GUIDs.cpp" />
+    <ClCompile Include="InStreamWrapper.cpp" />
+    <ClCompile Include="MemExtractCallback.cpp" />
+    <ClCompile Include="OutMemStream.cpp" />
+    <ClCompile Include="OutStreamWrapper.cpp" />
+    <ClCompile Include="PathScanner.cpp" />
+    <ClCompile Include="PropVariant.cpp" />
+    <ClCompile Include="SevenString.cpp" />
+    <ClCompile Include="SevenZipArchive.cpp" />
+    <ClCompile Include="SevenZipCompressor.cpp" />
+    <ClCompile Include="SevenZipException.cpp" />
+    <ClCompile Include="SevenZipExtractor.cpp" />
+    <ClCompile Include="SevenZipLibrary.cpp" />
+    <ClCompile Include="SevenZipLister.cpp" />
+    <ClCompile Include="UsefulFunctions.cpp" />
+    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
