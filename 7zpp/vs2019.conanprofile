@@ -1,0 +1,20 @@
+[settings]
+os=Windows
+os_build=Windows
+arch=x86
+arch_build=x86_64
+compiler=Visual Studio
+compiler.version=16
+compiler.toolset=v142
+
+[options]
+# General Public Packages
+
+# General Private Packages
+# -- None yet 
+
+[env]
+PreferredToolArchitecture=x64
+CONAN_USER_HOME_SHORT=None
+
+# General Public Packages
