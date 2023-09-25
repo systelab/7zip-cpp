@@ -32,3 +32,19 @@ dll/
 *.tlog
 build/*
 !build/.gitkeep
+
+#7zip builded files
+7z/**/.vs/
+7z/**/Debug/
+7z/**/Release/
+7z/**/x64/
+7z/**/ipch/
+7z/**/O/
+7z/**/AMD64/
+7z/*.opendb
+7z/*.sdf
+7z/*.dll
+7z/*.exe
+7z/*.lib
+7z/*.obj
+7z/*.pdb
