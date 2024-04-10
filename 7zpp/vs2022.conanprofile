@@ -4,8 +4,8 @@ os_build=Windows
 arch=x86
 arch_build=x86_64
 compiler=Visual Studio
-compiler.version=16
-compiler.toolset=v142
+compiler.version=17
+compiler.toolset=v143
 
 [options]
 # General Public Packages

@@ -44,8 +44,8 @@ class SevenZipCpp(ConanFile):
     def package(self):
         for h in self.header_list:
             self.copy(h, dst="include/7zip-cpp", src=".")
-        self.copy("7z*.lib", dst="lib", src=os.environ["CONAN_LIB_DIR"], keep_path=False)
-        self.copy("7z*.pdb", dst="bin", src=os.environ["CONAN_LIB_DIR"], keep_path=False)
+        self.copy("7z*.lib", dst="lib", src=str(self.settings.build_type), keep_path=False)
+        self.copy("7z*.pdb", dst="bin", src=str(self.settings.build_type), keep_path=False)
 
     def package_info(self):
         self.cpp_info.libs = ["7zpp"]
