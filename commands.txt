@@ -1,0 +1,2 @@
+conan build 7zpp/conanfile.py -of=build/Debug-x86 -pr:h=vs2022.conanprofile -pr:b=vs2022.conanprofile -s build_type=Debug -s:b build_type=Debug
+conan export-pkg 7zpp/conanfile.py --name=7zip-cpp --version=1.0.0 -of=build/Debug-x86 -pr:h=vs2022.conanprofile -pr:b=vs2022.conanprofile -s build_type=Debug -s:b build_type=Debug

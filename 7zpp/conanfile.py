@@ -1,7 +1,9 @@
-from conans import ConanFile, CMake
+from conan import ConanFile
+from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout
+from conan.tools.files import copy
 import os
 
-class SevenZipCpp(ConanFile):
+class SevenZipCppConan(ConanFile):
     name = "7zip-cpp"
     license = "MIT"
     url = "https://github.com/systelab/7zip-cpp"
@@ -10,7 +12,9 @@ class SevenZipCpp(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = {"shared": False}
-    generators = "cmake"
+
+    exports_sources = "7zip-cpp/*"
+
     header_list = [
         "7zpp.h",
         "CompressionFormat.h",
@@ -28,25 +32,31 @@ class SevenZipCpp(ConanFile):
         "SevenZipLister.h"
     ]
 
-    def source(self):
-        self.run("git clone https://github.com/systelab/7zip-cpp.git 7zip-cpp --recursive")
+    def layout(self):
+        cmake_layout(self, src_folder="../")
         
+    def generate(self):
+        tc = CMakeToolchain(self)
+        tc.generate()
+
     def build(self):
         cmake = CMake(self)
-        cmake.configure(source_folder="7zip-cpp")
+        cmake.configure()
         cmake.build()
-        
-        # Explicit way:
-        # self.run('cmake %s/hello %s'
-        #          % (self.source_folder, cmake.command_line))
-        # self.run("cmake --build . %s" % cmake.build_config)
 
     def package(self):
+        include_dst = os.path.join(self.package_folder, "include", "7zip-cpp")
+        include_src = os.path.join(self.source_folder, "7zpp")
+
         for h in self.header_list:
-            self.copy(h, dst="include/7zip-cpp", src=".")
-        self.copy("7z*.lib", dst="lib", src=str(self.settings.build_type), keep_path=False)
-        self.copy("7z*.pdb", dst="bin", src=str(self.settings.build_type), keep_path=False)
+            copy(self, h, src=include_src, dst=include_dst)
+
+        lib_src = os.path.join(self.build_folder, str(self.settings.build_type))
+        lib_dst = os.path.join(self.package_folder, "lib")
+        copy(self, "7z*.lib", src=lib_src, dst=lib_dst, keep_path=False)
+
+        bin_dst = os.path.join(self.package_folder, "bin")
+        copy(self, "7z*.pdb", src=lib_src, dst=bin_dst, keep_path=False)
 
     def package_info(self):
         self.cpp_info.libs = ["7zpp"]
-
